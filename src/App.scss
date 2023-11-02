@@ -10,12 +10,57 @@
 
 main {
   min-height: 100vh;
-  width: 100%;
+  max-width: 100vw;
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+
+  .header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+    padding: 24px;
+
+    .menu-options{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      a {
+        font-weight: 500;
+        font-size: 16px;
+        text-decoration: none;
+      }
+    }
+  }
+
+  .logo-container {
+    display: flex;
+    gap: 0.5rem;
+
+    img {
+      width: 100px;height: 100px;
+    }
+    .logo-text{
+      display: flex;
+      align-items: start;
+      justify-content: center;
+      flex-direction: column;
+    }
+    .logo-text-bold {
+      font-weight: 800;
+      font-size: 32px;
+    }
+    .logo-text-regular {
+      font-weight: 400;
+      font-size: 24px;
+    }
+  }
+
 
   h1 {
     color: $color-primary;
