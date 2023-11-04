@@ -4,7 +4,6 @@ import { CiCircleAlert } from 'react-icons/ci';
 
 function Home() {
   return (
-    <main>
       <header className='header-container'>
         <div className='logo-container'>
           <img src='../logo-img.svg'/>
@@ -28,7 +27,6 @@ function Home() {
           </button>
 
       </header>
-    </main>
   )
 }
 
