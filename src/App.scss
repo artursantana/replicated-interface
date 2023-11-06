@@ -8,14 +8,6 @@
   min-width: 100vw;
 }
 
-@keyframes appear {
-0% {
-transform: translateX(-100%);
-}
-100% { transform: translateX(0);
-
-}
-}
 
 .main {
   min-height: 100vh;
@@ -106,16 +98,31 @@ transform: translateX(-100%);
     align-items: center;
     justify-content: center;
     position: relative;
+    width: 80%;
     flex-grow: 1;
+    padding: 45px;
 
-    h1 {
-      font-size: 52px;
+
+    .heading-container {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      width: 70%;
+      align-items: flex-end;
+    }
+    h2 {
+      font-size: 62px;
+      font-weight: 700;
+      &:first-child {
+        align-self: flex-start;
+      }
     }
 
     .bubble {
       background-color: rgb(57, 57, 57);
       padding: 25px;
       border-radius: 50%;
+      animation: appear infinite 1s;
       position: absolute;
 
       &.rocket{

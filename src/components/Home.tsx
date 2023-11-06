@@ -6,7 +6,7 @@ function Home() {
   return (
       <header className='header-container'>
         <div className='logo-container'>
-          <img src='../logo-img.svg'/>
+        <img src="/public/logo-img.svg"/>
           <div className='logo-text'>
             <span className='logo-text-bold'>summerly</span>
             <span className='logo-text-regular'>media</span>

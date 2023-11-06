@@ -3,7 +3,10 @@
 export const Content = () => {
   return (
     <div className="content-container">
-        <h1>Let's grow your social presence</h1>
+        <div className="heading-container">
+          <h2>Let's grow</h2>
+          <h2> your social presence</h2>
+        </div>
           <div className="bubble rocket">
           🚀
           </div>
